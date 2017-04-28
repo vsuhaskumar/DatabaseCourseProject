@@ -1,0 +1,69 @@
+{
+    "Student" : [{
+                 "Email_Address"    :   "suhas@gmail.com",
+                 "Student_Name"     :   " Suhas Kumar",
+                 "Student_Gender"   :   "Male",
+                 "Student_Birthdate :   "03271992",
+                 "Student_Location  :   "Iowa City",
+                 
+                 "CreditCardInfo" : [{
+                                      "CardNo"      :   "07392784901236784",
+                                      "NameOnCard"  :   "Suhas V Kumar",
+                                      "ExpiryDate   :   "0411",
+                                      "CVV"         :   "321"
+                                    }]
+                
+                }]
+
+
+} //Student
+
+
+{
+    "Rating"  : [{
+                  "Email_Address"   :   "suhas@gmail.com",
+                  "CourseId"        :   "00ML",
+                  "RateStars"       :   "4",
+                  "Comments"        :   ["This is best course", "Instructor is not great", "Best instructor ever" ]
+                }]
+
+}//Rating
+
+
+
+{
+    "Transaction" :[{
+                     "TransactionId"        :   "11032",
+                     "TransactionStatus"    :   "Success",
+                     "TimeStamp"            :   "2017/02/24-12:00:00",
+                     "EmailAddress"         :   "suhasgudmi@gmail.com",
+                     "CourseId"             :   "CS101 - ADA"
+                    }]
+}//Transaction
+
+
+{
+    "Course" :[{
+                "CourseId"      :   "CS101 - ADA",
+                "CourseName"    :   "Analysis and Design of Algorithm",
+                "Overview"      :   "we will learn how to design Algorithm and do runtime analysis of each algorithm",
+                "Duration"      :   "60 days",
+                "Difficulty"    :   "Intermediate"
+                "Category"      :   "Computer Science"
+                "FAQ"           :   ["Is this course hard ?", "Do we get certificate after course completion"]
+              
+               "University" : [{
+                                "UniversityId"      :   "9312",
+                                "Description"       :   "University of Iowa offers various courses in all segments",
+                                "UniversityName"    :   "The University of Iowa",
+               
+                                "Instructor"  : [{
+                                                "InstructorId"      :   "Kasvar",
+                                                "InstructorName"    :   " Kasturi Varadarajan",
+                                                "InstructorGender"  :   "Male",
+                                                "Specialization"    :   "Algorithms"
+                                                }]
+                                
+                                }]
+              }]
+} //Course
