@@ -1,11 +1,10 @@
 {
     "Student" : [{
                  "Email_Address"    :   "suhas@gmail.com",
-                 "Student_Name"     :   " Suhas Kumar",
-                 "Student_Gender"   :   "Male",
-                 "Student_Birthdate :   "03271992",
+                 "Student_Name"     :   "Suhas Kumar",
+                 "Student_Gender"   :   "M",
+                 "Student_Birthdate :   “1992-10-10”,
                  "Student_Location  :   "Iowa City",
-                 
                  "CreditCardInfo" : [{
                                       "CardNo"      :   "07392784901236784",
                                       "NameOnCard"  :   "Suhas V Kumar",
@@ -14,7 +13,9 @@
                                     }]
                 
                 }]
-
+		courses: [{“id“: “CS101 - ADA”},
+			  {“id”: “CS102 - 200”}
+			 ]
 
 } //Student
 
@@ -22,9 +23,9 @@
 {
     "Rating"  : [{
                   "Email_Address"   :   "suhas@gmail.com",
-                  "CourseId"        :   "00ML",
+                  "CourseId"        :   "CS101 - ADA",
                   "RateStars"       :   "4",
-                  "Comments"        :   ["This is best course", "Instructor is not great", "Best instructor ever" ]
+                  "Comments"        :   ["This is best course"]
                 }]
 
 }//Rating
@@ -51,12 +52,12 @@
                 "Difficulty"    :   "Intermediate"
                 "Category"      :   "Computer Science"
                 "FAQ"           :   ["Is this course hard ?", "Do we get certificate after course completion"]
-              
-               "University" : [{
+		“Students” : [{“id”: “suhas@gmail.com”},
+			      {“id”: “kaustubh@gmail.com”}]
+                "University" : [{
                                 "UniversityId"      :   "9312",
+				"UniversityName"    :   "The University of Iowa",
                                 "Description"       :   "University of Iowa offers various courses in all segments",
-                                "UniversityName"    :   "The University of Iowa",
-               
                                 "Instructor"  : [{
                                                 "InstructorId"      :   "Kasvar",
                                                 "InstructorName"    :   " Kasturi Varadarajan",
