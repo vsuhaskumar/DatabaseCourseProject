@@ -1,70 +1,76 @@
+//Student
 {
-    "Student" : [{
-                 "Email_Address"    :   "suhas@gmail.com",
-                 "Student_Name"     :   "Suhas Kumar",
-                 "Student_Gender"   :   "M",
-                 "Student_Birthdate :   “1992-10-10”,
-                 "Student_Location  :   "Iowa City",
-                 "CreditCardInfo" : [{
-                                      "CardNo"      :   "07392784901236784",
-                                      "NameOnCard"  :   "Suhas V Kumar",
-                                      "ExpiryDate   :   "0411",
-                                      "CVV"         :   "321"
-                                    }]
+    "Students" : [{
+                 "StudentEmailAddress"  :   "suhas@gmail.com",
+                 "StudentName"          :   "Suhas Kumar",
+                 "StudentGender"        :   "M",
+                 "StudentDOB"           :   “1992-10-10”,
+                 "StudentLocation"      :   "Iowa City",
+                 "CreditCards"          : [{
+                                            "CreditCardNo" :   "07392784901236784",
+                                            "NameOnCard"   :   "Suhas V Kumar",
+                                            "ExpDate       :   "0411",
+                                            "CVV"          :   "321"
+                                           }]
                 
                 }]
-		courses: [{“id“: “CS101 - ADA”},
-			  {“id”: “CS102 - 200”}
-			 ]
+    "Courses" : [
+                 {"id": "CS101 - ADA"},
+                 {"id": "CS102 - 200"}
+			    ]
 
-} //Student
+}
 
 
+//Rating
 {
-    "Rating"  : [{
-                  "Email_Address"   :   "suhas@gmail.com",
-                  "CourseId"        :   "CS101 - ADA",
-                  "RateStars"       :   "4",
-                  "Comments"        :   ["This is best course"]
+    "Ratings"  : [{
+                  "StudentID"   :   "suhas@gmail.com",
+                  "CourseID"    :   "CS101 - ADA",
+                  "RateStars"   :   "4",
+                  "Comments"    :   ["This is best course"]
                 }]
 
-}//Rating
+}
 
 
-
+//Transaction
 {
-    "Transaction" :[{
-                     "TransactionId"        :   "11032",
+    "Transactions" :[{
+                     "TransactionID"        :   "11032",
                      "TransactionStatus"    :   "Success",
-                     "TimeStamp"            :   "2017/02/24-12:00:00",
-                     "EmailAddress"         :   "suhasgudmi@gmail.com",
-                     "CourseId"             :   "CS101 - ADA"
+                     "TransactionTimeStamp" :   "2017/02/24-12:00:00",
+                     "StudentID"            :   "suhasgudmi@gmail.com",
+                     "CourseID"             :   "CS101 - ADA"
                     }]
-}//Transaction
+}
 
 
+//Course
 {
-    "Course" :[{
-                "CourseId"      :   "CS101 - ADA",
-                "CourseName"    :   "Analysis and Design of Algorithm",
-                "Overview"      :   "we will learn how to design Algorithm and do runtime analysis of each algorithm",
-                "Duration"      :   "60 days",
-                "Difficulty"    :   "Intermediate"
-                "Category"      :   "Computer Science"
-                "FAQ"           :   ["Is this course hard ?", "Do we get certificate after course completion"]
-		“Students” : [{“id”: “suhas@gmail.com”},
-			      {“id”: “kaustubh@gmail.com”}]
-                "University" : [{
-                                "UniversityId"      :   "9312",
-				"UniversityName"    :   "The University of Iowa",
-                                "Description"       :   "University of Iowa offers various courses in all segments",
-                                "Instructor"  : [{
-                                                "InstructorId"      :   "Kasvar",
-                                                "InstructorName"    :   " Kasturi Varadarajan",
-                                                "InstructorGender"  :   "Male",
-                                                "Specialization"    :   "Algorithms"
+    "Courses" :[{
+                "CourseID"          :   "CS101 - ADA",
+                "CourseName"        :   "Analysis and Design of Algorithm",
+                "CourseOverview"    :   "we will learn how to design Algorithm and do runtime analysis of each algorithm",
+                "CourseDuration"    :   "60 days",
+                "CourseDifficulty"  :   "Intermediate"
+                "CourseCategory"    :   "Computer Science"
+                "CourseFAQ"         :   ["Is this course hard ?", "Do we get certificate after course completion"]
+		        "StudentID"         :   [
+                                          {"id": "suhas@gmail.com"},
+			                              {"id": "kaustubh@gmail.com"}
+                                        ]
+                "Universities" : [{
+                                 "UniversityID"          :   "9312",
+				                 "UniversityName"        :   "The University of Iowa",
+                                 "UniversityDescription" :   "University of Iowa offers various courses in all segments",
+                                 "Instructors"  : [{
+                                                 "InstructorID"              :   "Kasvar",
+                                                 "InstructorName"            :   "Kasturi Varadarajan",
+                                                 "InstructorGender"          :   "M",
+                                                 "InstructorSpecialization"  :   "Algorithms"
                                                 }]
                                 
                                 }]
               }]
-} //Course
+} 
