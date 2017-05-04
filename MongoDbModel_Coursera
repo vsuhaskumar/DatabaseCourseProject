@@ -1,20 +1,20 @@
 //Student
 {
     "Students" : [{
-                 "StudentEmailAddress"  :   "suhas@gmail.com",
+                 "StudentEmailAddress"  :   "suhas@gmail.com", //Is Primary key for Students
                  "StudentName"          :   "Suhas Kumar",
                  "StudentGender"        :   "M",
                  "StudentDOB"           :   “1992-10-10”,
                  "StudentLocation"      :   "Iowa City",
                  "CreditCards"          : [{
-                                            "CreditCardNo" :   "07392784901236784",
+                                            "CreditCardNo" :   "07392784901236784", //Is Primary key for Credit Cards
                                             "NameOnCard"   :   "Suhas V Kumar",
                                             "ExpDate       :   "0411",
                                             "CVV"          :   "321"
                                            }]
                 
                 }]
-    "Courses" : [
+    "Courses" : [   //Is Foreign key for Students
                  {"id": "CS101 - ADA"},
                  {"id": "CS102 - 200"}
 			    ]
@@ -25,8 +25,8 @@
 //Rating
 {
     "Ratings"  : [{
-                  "StudentID"   :   "suhas@gmail.com",
-                  "CourseID"    :   "CS101 - ADA",
+                  "StudentID"   :   "suhas@gmail.com", //Is Foreign key for Ratings
+                  "CourseID"    :   "CS101 - ADA", //Is Foreign key for Ratings
                   "RateStars"   :   "4",
                   "Comments"    :   ["This is best course"]
                 }]
@@ -37,11 +37,11 @@
 //Transaction
 {
     "Transactions" :[{
-                     "TransactionID"        :   "11032",
+                     "TransactionID"        :   "11032", //Is Primary key for Transactions
                      "TransactionStatus"    :   "Success",
                      "TransactionTimeStamp" :   "2017/02/24-12:00:00",
-                     "StudentID"            :   "suhasgudmi@gmail.com",
-                     "CourseID"             :   "CS101 - ADA"
+                     "StudentID"            :   "suhasgudmi@gmail.com", //Is Foreign key for Transactions
+                     "CourseID"             :   "CS101 - ADA" //Is Foreign key for Transactions
                     }]
 }
 
@@ -49,23 +49,23 @@
 //Course
 {
     "Courses" :[{
-                "CourseID"          :   "CS101 - ADA",
+                "CourseID"          :   "CS101 - ADA",  //Is primary key for Courses
                 "CourseName"        :   "Analysis and Design of Algorithm",
                 "CourseOverview"    :   "we will learn how to design Algorithm and do runtime analysis of each algorithm",
                 "CourseDuration"    :   "60 days",
                 "CourseDifficulty"  :   "Intermediate"
                 "CourseCategory"    :   "Computer Science"
                 "CourseFAQ"         :   ["Is this course hard ?", "Do we get certificate after course completion"]
-		        "StudentID"         :   [
+		        "StudentID"         :   [  //Is Foreign key for Courses
                                           {"id": "suhas@gmail.com"},
 			                              {"id": "kaustubh@gmail.com"}
                                         ]
                 "Universities" : [{
-                                 "UniversityID"          :   "9312",
+                                 "UniversityID"          :   "9312", //Is Primary key for University
 				                 "UniversityName"        :   "The University of Iowa",
                                  "UniversityDescription" :   "University of Iowa offers various courses in all segments",
                                  "Instructors"  : [{
-                                                 "InstructorID"              :   "Kasvar",
+                                                 "InstructorID"              :   "Kasvar", //Is PK for Instructor
                                                  "InstructorName"            :   "Kasturi Varadarajan",
                                                  "InstructorGender"          :   "M",
                                                  "InstructorSpecialization"  :   "Algorithms"
